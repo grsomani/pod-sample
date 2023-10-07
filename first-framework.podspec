@@ -2,17 +2,19 @@ Pod::Spec.new do |spec|
 
   spec.name         = "first-framework"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of first-framework."
+  spec.summary      = "first-framework is a sample framework to provide greetings to user."
 
   spec.description  = <<-DESC
-  Sample Pod to help greet the user
+  first-framework is a sample framework to provide greetings to user.
+  Sample Pod to demonstrate pod creation and distribution.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/first-framework"
+  spec.homepage     = "https://github.com/grsomani/pod-sample/blob/main/README.md"
   spec.license      = "MIT"
   spec.author             = { "Ganesh Somani" => "ganesh.somani@gmail.com" }
   spec.platform     = :ios
   spec.platform     = :ios, "14.0"
+  spec.swift_version = '4.1'
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -21,8 +23,8 @@ Pod::Spec.new do |spec|
   # spec.tvos.deployment_target = "9.0"
 
 
-  spec.source       = { :git => "git@github.com:grsomani/pod-sample.git", :tag => "#{spec.version}" }
-  spec.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
+  spec.source       = { :git => "https://github.com/grsomani/pod-sample.git", :tag => "#{spec.version}" }
+  spec.source_files  = "Classes", "first-framework/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
