@@ -8,6 +8,8 @@
 import Foundation
 
 public class GreetAgent {
+    public init() {}
+    
     public func greetUser(name: String) -> String {
         return "Hello \(name)"
     }
