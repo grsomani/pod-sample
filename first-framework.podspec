@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "first-framework"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "first-framework is a sample framework to provide greetings to user."
 
   spec.description  = <<-DESC
