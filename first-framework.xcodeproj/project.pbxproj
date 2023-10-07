@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D7EE02EA2AD139210085BB78 /* first_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EE02E92AD139210085BB78 /* first_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7EE02F12AD139A90085BB78 /* GreetAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE02F02AD139A90085BB78 /* GreetAgent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7EE02E62AD139210085BB78 /* first_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = first_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7EE02E92AD139210085BB78 /* first_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = first_framework.h; sourceTree = "<group>"; };
+		D7EE02F02AD139A90085BB78 /* GreetAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetAgent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				D7EE02E92AD139210085BB78 /* first_framework.h */,
+				D7EE02F02AD139A90085BB78 /* GreetAgent.swift */,
 			);
 			path = "first-framework";
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					D7EE02E52AD139210085BB78 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7EE02F12AD139A90085BB78 /* GreetAgent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +268,7 @@
 		D7EE02EE2AD139210085BB78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -284,7 +290,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.first-framework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,6 +303,7 @@
 		D7EE02EF2AD139210085BB78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -314,6 +325,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.first-framework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
